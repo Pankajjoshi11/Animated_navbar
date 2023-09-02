@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 150%;
+}
+.main{
+    background: linear-gradient(rgb(248, 133, 2),rgba(255, 255, 255,0.9));
+    height:100%;
+    width: 100%;
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 20%;
+    position: static;
+    width: 100%;
+}
+.menu img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    gap: 61px;
+    padding: 15px;
+}
+.menu h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu h3 a{
+    text-decoration: none;
+    color: white;
+}
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transition: 0.5s linear;
+  }
+  
+  .input-search{
+    height: 25px;
+    width: 0px;
+    border-style: none;
+    padding: 6px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 40px;
+    color: #fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    height: 40px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 10px;
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 50px;
+    background-color: transparent;
+    border:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    padding-left: 3px;
+  }
+  .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10%;
+    position: relative;
+    
+  }
+  .login :hover{
+    background-color: white;
+    color: black;
+  }
+  .btn{
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #22a6b3;
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s linear;
+    font-size: 22px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
